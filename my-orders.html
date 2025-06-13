@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Orders</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (localStorage.getItem("loggedIn") !== "true") {
+        alert("🚫 Please login to visit this page.");
+        window.location.href = "login.html";
+      }
+    });
+
+    /* try {
+       const res = await fetch('/orders', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const data = await res.json();
+
+       if (res.ok && Array.isArray(data.orders)) {
+        const container = document.getElementById('ordersContainer');
+        if (data.orders.length === 0) {
+          container.innerHTML = "<p>No orders found.</p>";
+          return;
+        }
+
+        data.orders.forEach(order => {
+          const orderDiv = document.createElement('div');
+          orderDiv.classList.add('order');
+          orderDiv.innerHTML = `
+            <div class="order-id">Order ID: #${order._id || order.id}</div>
+            <div class="order-items">Items: ${order.items.join(', ')}</div>
+            <div class="order-status ${order.status === 'Pending' ? 'order-pending' : ''}">
+              ${order.status}
+            </div>
+            <div class="order-date">Date: ${new Date(order.date).toLocaleDateString()}</div>
+          `;
+          container.appendChild(orderDiv);
+        });
+      } else {
+        alert("Failed to fetch orders.");
+      }
+    } catch (err) {
+      console.error("❌ Error fetching orders:", err);
+      alert("Something went wrong while loading your orders.");
+    } */
+
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: linear-gradient(to right, #dbeafe, #c7d2fe);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .orders-container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .order {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .order:last-child {
+      border-bottom: none;
+    }
+
+    .order-id {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .order-status {
+      color: green;
+      font-weight: bold;
+    }
+
+    .order-pending {
+      color: orange;
+    }
+
+    .order-items {
+      margin-top: 5px;
+    }
+
+    .order-date {
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>My Orders</h1>
+
+  <div class="orders-container" id="ordersContainer"></div>
+  </div>
+</body>
+
+</html>
