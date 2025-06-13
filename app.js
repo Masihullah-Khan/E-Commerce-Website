@@ -88,7 +88,7 @@ app.get('/api/orders/my-orders', async (req, res) => {
 
 
 // 3. MongoDB Atlas connection
-mongoose.connect('mongodb+srv://78khanfardeen:423463234422@masiullahcluster.uzo0m4w.mongodb.net/ecommerce',
+mongoose.connect('455443342.uzo0m4w.mongodb.net/ecommerce',
 
 )
   .then(() => console.log('✅ MongoDB Atlas Connected'))
