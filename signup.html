@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #dbeafe, #c7d2fe);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    /* Signup form container */
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      width: 100%;
+      max-width: 400px;
+      margin: 10px;
+    }
+
+    form input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form input:focus {
+      border-color: #28a745;
+      outline: none;
+    }
+
+    form button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #6c5ce7, #a29bfe);
+      color: #fff;
+      border: none;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    form button:hover {
+        background: linear-gradient(to right, #a29bfe, #6c5ce7);
+        transform: scale(1.02);
+    }
+
+    p {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.95rem;
+      margin: 10px;
+    }
+
+    p a {
+      color: #1ccf46;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 500px) {
+      form {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Create Account</h2>
+  <form id="signup-form">
+    <input type="text" id="name" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+    <button type="submit">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Log In</a></p>
+    
+  </form>
+
+  <script src="signup.js"></script>
+</body>
+</html> 
