@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1><span class="logo"></span> ShopNest 🛍️</h1>
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="cart.html">🛒 Cart</a></li>
+        <li><a href="my-orders.html">My Orders</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <!--<li><a href="login.html">Login</a></li> -->
+        <li id="auth-link"><a href="login.html">Login</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." >
+        <button class="search-btn">Search</button>
+      </div>
+      
+    </nav>
+  </header>
+
+  <section id="products">
+    <h2>Products</h2>
+    <div class="product" data-name="Silver And White Analog Watch">
+      <img src="product1.jpg" alt="Product 1">
+      <h3>Silver And White Analog Watch</h3>
+      <p>Price: $10</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="Red Nike Shoes With White Mix">
+      <img src="product2.jpg" alt="Product 2">
+      <h3>Red Nike Shoes With White Mix</h3>
+      <p>Price: $80</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="Black And Gold Rolex Watch">
+      <img src="product3.jpg" alt="Product 3">
+      <h3>Black And Gold Rolex Watch</h3>
+      <p>Price: $150</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="Siver Blue Analog Watch">
+      <img src="product4.jpg" alt="Product 4">
+      <h3>Siver Blue Analog Watch</h3>
+      <p>Price: $10</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="Black-White And Red Air Jordan Shoes">
+      <img src="product5.jpg" alt="Product 5">
+      <h3>Black-White And Red Air Jordan Shoes</h3>
+      <p>Price: $12</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="Silver-Black Analog Watch">
+      <img src="product6.jpg" alt="Product 6">
+      <h3>Silver-Black Analog Watch</h3>
+      <p>Price: $25</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="Blue-White Nike Running Shoes">
+      <img src="product7.jpg" alt="Product 7">
+      <h3>Blue-White Nike Running Shoes</h3>
+      <p>Price: $30</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="White Adidas Low-Top Sneakers">
+      <img src="product8.jpg" alt="Product 8">
+      <h3>White Adidas Low-Top Sneakers</h3>
+      <p>Price: $15</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="White And Black Nike Air Force 1 Low">
+      <img src="product9.jpg" alt="Product 9">
+      <h3>White And Black Nike Air Force 1 Low</h3>
+      <p>Price: $11</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="Red-White Air Jordan 1 Shoes">
+      <img src="product10.jpg" alt="Product 10">
+      <h3>Red-White Air Jordan 1 Shoes</h3>
+      <p>Price: $23</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="White-Black-Red Nike Air Max 90">
+      <img src="product11.jpg" alt="Product 11">
+      <h3>White-Black-Red Nike Air Max 90</h3>
+      <p>Price: $72</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="product" data-name="Red Air Jordan 12 Max Shoes">
+      <img src="product12.jpg" alt="Product 12">
+      <h3>Red Air Jordan 12 Max Shoes</h3>
+      <p>Price: $33</p>
+      <button class="cart-btn">Add to Cart</button>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <!-- Add more products as needed -->
+    <div id="no-result-msg"></div>
+     </section>
+
+    <section id="about">
+      <h2>About ShopNest</h2>
+      <p>
+        Welcome to <strong>ShopNest</strong> — your one-stop shop for stylish watches, trendy shoes, and timeless accessories. 
+        We believe in quality, affordability, and turning your everyday looks into fashion statements. 🛍️
+      </p>
+      <p>
+        Whether you're chasing the latest trends or keeping it classic, ShopNest is here to make shopping smooth, stylish, and seriously satisfying.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or feedback, feel free to reach out to us! We're here to help.</p>
+      
+      <div class="contact-details">
+        <div>
+          <h3>📍 Address</h3>
+          <p>123 ShopNest Street, Muzaffarnagar, India</p>
+        </div>
+        <div>
+          <h3>📧 Email</h3>
+          <p>support@shopnest.com</p>
+        </div>
+        <div>
+          <h3>📞 Phone</h3>
+          <p>(+91) 7409473437</p>
+        </div>
+      </div>
+    
+      <h3>Or reach out using the form below:</h3>
+      
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    
+    
+  </section>
+
+  <footer>
+    <p>© ShopNest 2025 All Rights Reserved</p>
+  </footer>
+
+</body>
+
+</html>
